@@ -6,9 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="font-awesome.min.css">
-<link rel="stylesheet" href="assets/css/w3.css">
-<link rel="stylesheet" href="assets/css/css.css">
-<link rel="stylesheet" href="assets/css/css1.css">
+<link rel="stylesheet" href="assets/css/index.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
 integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
 crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -23,33 +21,42 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .w3-sidebar {width: 100px;background: #222;}
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 #main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
 </style>
 </head>
-<body class="w3-black">
+<body class="custom_bac_color">
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+<nav class="asied_bar">
   <!-- Avatar image in top left corner -->
   <!--  <img src="IMG_20221109_192257_362.jpg" style="width:100%"> -->
   <img src="assets/img/IMG_20221109_192257_362.jpg" alt="Armin" class="w3-center w3-circle " style="width:100px">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+  <div class="buttons">
+  <a href="#" class="w3-button">
+    <div class="center">
     <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
+    </div>
   </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+  <a href="#about" class="w3-button">
+  <div class="center">
     <i class="fa fa-user w3-xxlarge"></i>
     <p>ABOUT</p>
+    </div>
   </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p>PHOTOS</p>
+  <a href="#photos" class="w3-button">
+  <div class="center">
+      <i class="fa fa-eye w3-xxlarge"></i>
+      <p>PHOTOS</p>
+    </div>
   </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
+  <a href="#contact" class="w3-button">
+  <div class="center">
+      <i class="fa fa-envelope w3-xxlarge"></i>
+      <p>CONTACT</p>
+    </div>
+    </a>
+  </div>
 </nav>
 
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
@@ -63,12 +70,11 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 </div>
 
 <!-- Page Content -->
-<div class="w3-padding-large" id="main">
+<div class="inline_disp" >
   <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Amir Hossein.</h1>
-    <p>Photographer and Web Designer.</p>
-    <img src="assets/img/20221025_184940.jpg" alt="boy" class="w3-image" width="992" height="1108">
+  <header class="w3-container w3-padding-32 w3-center custom_bac_color" id="home">
+    <div class="shadow_2"></div>
+    <img src="assets/img/20221025_184940.jpg" alt="boy" class="img_res" width="992" height="1108">
   </header>
 
   <!-- About Section -->
@@ -169,9 +175,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   
   <!-- Portfolio Section -->
   <div class="w3-padding-64 w3-content" id="photos">
+    <div class="port_sec">
     <h2 class="w3-text-light-grey">My Photos</h2>
     <hr style="width:200px" class="w3-opacity">
-
+    </div>
     <!-- Grid for photos -->
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half">
@@ -189,18 +196,19 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   </div>
 
   <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+  <div class="w3-padding-64 w3-content w3-text-grey footer" id="contact">
+    <div class="cont">
     <h2 class="w3-text-light-grey">Contact Me</h2>
     <hr style="width:200px" class="w3-opacity">
+    </div>
 
-    <div class="w3-section">
+    <div class="w3-section loct">
       <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> ILAM, IR</p>
       <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +98 9184627263</p>
       <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: amirhossein1381.parseh@gmail.com</p>
     </div><br>
-    <p>Let's get in touch. Send me a message:</p>
 
-    <form action="/action_page.php" target="_blank">
+    <!-- <form action="/action_page.php" target="_blank">
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
@@ -210,32 +218,12 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
       </p>
-    </form>
+    </form> -->
   <!-- End Contact Section -->
   </div>
  
     <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <ul class="c1">
-      
-    <li class="c2"><a class="c3" href="https://join.skype.com/invite/A0k1325aYibw"><i class="fab fa-skype" aria-hidden="true"></i></a></li>
-    <li class="c2"><a class="c3" href="https://instagram.com/__amirho3ein__20?igshid=ZDdkNTZiNTM="><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-    <li class="c2"><a class="c3" href="https://www.linkedin.com/in/amirhossein-parseh-535042267"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-    <li class="c2"><a class="c3" href="https://www.youtube.com/@__amirho3ein__20"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
-    <li class="c2"><a class="c3" href="https://www.discord.com/amir 20#1443"><i class="fab fa-discord" aria-hidden="true"></i></a></li>
-    </ul><!--
-    <i>
-        <a class="fa fa-instagram w3-hover-opacity" href="https://instagram.com/__amirho3ein__20?igshid=ZDdkNTZiNTM="> </a>
-    </i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i >
-        <a class="fa fa-linkedin w3-hover-opacity" href="https://www.linkedin.com/in/amirhossein-parseh-535042267"></a>
-    </i>
-    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p> -->
-  <!-- End footer -->
-  </footer>
+
 
 <!-- END PAGE CONTENT -->
 </div>
