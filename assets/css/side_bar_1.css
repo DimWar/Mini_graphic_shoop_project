@@ -93,3 +93,60 @@
     flex-direction: column;
     align-items: flex-start;
 }
+
+.border_rad{
+    border-radius: 7px;
+}
+
+.border_rad_2{
+    border-radius: 5px;
+}
+
+.person_box{
+    background: #45464f;
+    width: 330px;
+    height: 90px;
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.person_box img{
+    width: 65px!important;
+    border-radius: 50%;
+}
+
+.person_box .text_1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+}
+
+.person_box .text_1 .t_1{
+    font-size: 16px; 
+    position: relative;
+    left: 0;
+    margin-bottom: 7px;
+}
+
+.person_box .text_1 .t_2{
+    font-size: 13px;
+    position: relative;
+    left: -6px;
+}
+
+.t_1_a{
+    font-size: 16px;
+    position: relative;
+    left: -9px;
+    margin-bottom: 7px;
+}
+
+.t_2_a{
+    font-size: 13px;
+}

@@ -6,23 +6,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="font-awesome.min.css">
-<link rel="stylesheet" href="assets/css/index.css">
+<link rel="stylesheet" href="assets/css/index_1.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
 integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
 crossorigin="anonymous" referrerpolicy="no-referrer" />
-<style>
-    aaa{
-        background-attachment: fixed;
-        background-color: #222;
-    }
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 100px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-
-</style>
 </head>
 <body class="custom_bac_color">
 
@@ -73,7 +60,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <div class="inline_disp" >
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center custom_bac_color" id="home">
-    <div class="shadow_2"></div>
     <img src="assets/img/20221025_184940.jpg" alt="boy" class="img_res" width="992" height="1108">
   </header>
 
@@ -87,19 +73,19 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     </p>
     <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
     <p class="w3-wide">Photography</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    <div class="w3-white border_rad">
+      <div class="w3-dark-grey border_rad_2" style="height:28px;width:95%"></div>
     </div>
-    <p class="w3-wide">Web Design</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    <p class="w3-wide ">Web Design</p>
+    <div class="w3-white border_rad">
+      <div class="w3-dark-grey border_rad_2" style="height:28px;width:85%"></div>
     </div>
     <p class="w3-wide">Photoshop</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    <div class="w3-white border_rad">
+      <div class="w3-dark-grey border_rad_2" style="height:28px;width:80%"></div>
     </div><br>
     
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey border_rad_2">
       <div class="w3-quarter w3-section">
         <span class="w3-xlarge">11+</span><br>
         Partners
@@ -117,59 +103,23 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         Meetings
       </div>
     </div>
-
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <i class="fa fa-download"></i> Download Resume
-    </button>
-    
-    <!-- Grid for pricing tables -->
-    <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half w3-margin-bottom">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Photography</li>
-          <li class="w3-padding-16">5GB Storage</li>
-          <li class="w3-padding-16">Mail Support</li>
-          <li class="w3-padding-16">
-            <h2>$ 10</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
-      </div>
-
-      <div class="w3-half">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Photography</li>
-          <li class="w3-padding-16">50GB Storage</li>   
-          <li class="w3-padding-16">Endless Support</li>
-          <li class="w3-padding-16">
-            <h2>$ 25</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
-      </div>
-    <!-- End Grid/Pricing tables -->
-    </div>
     
     <!-- Testimonials -->
     <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
-    <img src="assets/   /1677185611606.jpg" alt="Hadi" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Hadi.</span> Berra's heart.</p>
-    <p>Amir Sait is beautiful. <br>Good job:) </p><br>
-    
-    <img src="assets/img/1677185866901.jpg" alt="Armin" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Armin.</span> Dear Dell.</p>
-    <p>Well done, that's great :)</p>
+    <div class="person_box">
+    <img src="assets/img/1677185611606.jpg" alt="Hadi" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <div class="text_1">
+    <span class="t_1">Hadi Mohammadi</span>
+    <span class="t_2">he's my best firend</span>
+    </div>
+    </div>
+    <div class="person_box">
+    <img src="assets/img/1677185866901.jpg" alt="Hadi" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <div class="text_1">
+    <span class="t_1_a">Armin Karimi</span>
+    <span class="t_2_a">he's my best firend</span>
+    </div>
+    </div>
   <!-- End About Section -->
   </div>
   
@@ -183,11 +133,15 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half">
         <img src="assets/img/1 (2).jpg" style="width:100%">
-        <img src="assets/img/1 (5).jpg" style="width:100%">
       </div>
-
       <div class="w3-half">
         <img src="assets/img/1 (3).jpg" style="width:100%">
+        </div>
+        
+        <div class="w3-half">
+        <img src="assets/img/1 (5).jpg" style="width:100%">
+      </div>
+      <div class="w3-half">
         <img src="assets/img/amir.jpg.webp" style="width:100%">
       </div>
     <!-- End photo grid -->
