@@ -59,7 +59,8 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!-- Page Content -->
 <div class="inline_disp" >
   <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center custom_bac_color" id="home">
+  <div class="shadow_animat"></div>
+  <header class="head" id="home">
     <img src="assets/img/20221025_184940.jpg" alt="boy" class="img_res" width="992" height="1108">
   </header>
 
@@ -73,53 +74,62 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     </p>
     <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
     <p class="w3-wide">Photography</p>
-    <div class="w3-white border_rad">
-      <div class="w3-dark-grey border_rad_2" style="height:28px;width:95%"></div>
+    <div class="ref_color border_rad">
+      <div class="ref_color_2 border_rad_2" style="height:28px;width:95%"></div>
     </div>
     <p class="w3-wide ">Web Design</p>
-    <div class="w3-white border_rad">
-      <div class="w3-dark-grey border_rad_2" style="height:28px;width:85%"></div>
+    <div class="ref_color border_rad">
+      <div class="ref_color_2 border_rad_2" style="height:28px;width:85%"></div>
     </div>
     <p class="w3-wide">Photoshop</p>
-    <div class="w3-white border_rad">
-      <div class="w3-dark-grey border_rad_2" style="height:28px;width:80%"></div>
-    </div><br>
-    
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey border_rad_2">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">11+</span><br>
-        Partners
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">55+</span><br>
-        Projects Done
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">89+</span><br>
-        Happy Clients
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">150+</span><br>
-        Meetings
+    <div class="ref_color border_rad">
+      <div class="ref_color_2 border_rad_2" style="height:28px;width:80%"></div>
+    </div>
+    <div class="count_bar">
+    <div class="counter" id="cout_1">
+      <div class="count_text">
+        <span class="ct_1">11+</span>
+         <span class="ct_2">Partners</span>
       </div>
     </div>
+    <div class="counter" id="cout_2">  
+      <div class="count_text">
+        <span class="ct_1">55+</span>
+         <span class="ct_2">Projects Done</span>
+      </div>
+    </div>
+    <div class="counter" id="cout_3">   
+    <div class="count_text">
+        <span class="ct_1">89+</span>
+         <span class="ct_2">Happy Clients</span>
+      </div>
+    </div>
+    <div class="counter" id="cout_4">  
+      <div class="count_text">
+        <span class="ct_1">150+</span>
+         <span class="ct_2">Meetings</span>
+      </div>
+    </div>  
+  </div>
     
     <!-- Testimonials -->
-    <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
-    <div class="person_box">
+    <h3 class="w3-padding-24 w3-text-light-grey" id="per_text">My Reputation</h3>  
+    <div class="person_sec">
+    <div class="person_box" id="person_1">
     <img src="assets/img/1677185611606.jpg" alt="Hadi" class="w3-left w3-circle w3-margin-right" style="width:80px">
     <div class="text_1">
     <span class="t_1">Hadi Mohammadi</span>
     <span class="t_2">he's my best firend</span>
     </div>
     </div>
-    <div class="person_box">
+    <div class="person_box" id="person_2">
     <img src="assets/img/1677185866901.jpg" alt="Hadi" class="w3-left w3-circle w3-margin-right" style="width:80px">
     <div class="text_1">
     <span class="t_1_a">Armin Karimi</span>
     <span class="t_2_a">he's my best firend</span>
     </div>
     </div>
+  </div>
   <!-- End About Section -->
   </div>
   
@@ -130,7 +140,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     <hr style="width:200px" class="w3-opacity">
     </div>
     <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
+    <!-- <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half">
         <img src="assets/img/1 (2).jpg" style="width:100%">
       </div>
@@ -145,7 +155,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
         <img src="assets/img/amir.jpg.webp" style="width:100%">
       </div>
     <!-- End photo grid -->
-    </div>
+    </div> -->
   <!-- End Portfolio Section -->
   </div>
 
