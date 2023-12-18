@@ -1,0 +1,58 @@
+.count_bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 75px 0;
+}
+
+.counter{
+    width: 207px;
+    height: 114px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #616161;
+    color: #cbcbcb;
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 28px 0px;
+    transition: all .4s ease;
+}
+
+.count_text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+.ct_1{
+    font-weight: 500;
+    font-size: 26px;
+}
+
+.ct_2{
+    font-weight: 600;
+    font-size: 22px;
+}
+
+#cout_1:hover{
+    transform: scale(1.05);
+    box-shadow:  0px 0px 10px 1px #006073c1;
+}
+
+#cout_2:hover{
+    transform: scale(1.05);
+    box-shadow:  0px 0px 10px 1px #ae1f12b8;
+}
+
+#cout_3:hover{
+    transform: scale(1.05);
+    box-shadow:  0px 0px 10px 1px  #f78000aa;
+}
+
+#cout_4:hover{
+    transform: scale(1.05);
+    box-shadow:  0px 0px 10px 1px  #831345d2;
+}

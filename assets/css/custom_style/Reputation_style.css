@@ -1,0 +1,78 @@
+.person_sec{
+    margin: 100px -5px 0px 0;
+}
+
+#per_text::after{
+    content: '';
+    width: 193px;
+    height: 3px;
+    border-radius: 10px;
+    background: #2a9d8f;
+    display: block;
+    margin: 10px 0 0 0;
+}
+
+.person_box{
+    background: #45464f;
+    width: 330px;
+    height: 90px;
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    transition: all .3s linear;
+}
+
+.person_box img{
+    width: 65px!important;
+    border-radius: 50%;
+}
+
+.person_box .text_1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+}
+
+.person_box .text_1 .t_1{
+    font-size: 16px; 
+    position: relative;
+    left: 0;
+    margin-bottom: 7px;
+}
+
+.person_box .text_1 .t_2{
+    font-size: 13px;
+    position: relative;
+    left: -6px;
+}
+
+#person_1{
+    margin-bottom: 35px;
+}
+
+
+#person_1:hover{
+    transform: scale(1.05);
+    box-shadow:  0px 0px 10px 1px  #444444e9;
+}
+
+#person_2:hover{
+    transform: scale(1.05);
+    box-shadow:  0px 0px 10px 1px  #444444e9;
+}
+
+.t_1_a{
+    font-size: 16px;
+    position: relative;
+    left: -9px;
+    margin-bottom: 7px;
+}
+
+.t_2_a{
+    font-size: 13px;
+}

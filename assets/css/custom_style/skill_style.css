@@ -1,0 +1,29 @@
+.border_rad{
+    border-radius: 7px;
+}
+
+.border_rad_2{
+    border-radius: 5px;
+}
+
+.ref_color{
+    background: #1f1f1fb9;
+}
+
+.ref_color_2{
+    background: #3a3a3b;
+}
+
+#my_skills{
+    margin-top: 70px;
+}
+
+#my_skills::after{
+    content: '';
+    width: 193px;
+    height: 3px;
+    border-radius: 10px;
+    background: #d3082daa;
+    display: block;
+    margin: 10px 0 35px 0;
+}

@@ -1,0 +1,34 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.loct{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#contact_me{
+    margin-left: -41px;
+}
+
+#contact_me::after{
+    content: '';
+    width: 193px;
+    height: 3px;
+    border-radius: 10px;
+    background: #06d6a0;
+    display: block;
+    margin: 10px 0 0 40px;
+}

@@ -1,10 +1,24 @@
 
-@import url("document.css");
-@import url("clases.css");
-@import url("icon.css");
-@import url("media_queries.css");
-@import url("custom_style.css");
-@import url("side_bar_1.css");
+@import url("w3styles/document.css");
+@import url("w3styles/clases.css");
+@import url("w3styles/icon.css");
+@import url("w3styles/media_queries.css");
+@import url("custom_style/side_bar_1.css");
+@import url("custom_style/header_style.css");
+@import url("custom_style/Reputation_style.css");
+@import url("custom_style/countbar_style.css");
+@import url("custom_style/skill_style.css");
+@import url("custom_style/Contact_style.css");
+@import url("custom_style/photos_style.css");
+
+
+
+/* header bac color */
+.custom_bac_color{
+  background: #232429;
+}
+
+
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
