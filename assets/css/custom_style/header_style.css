@@ -11,8 +11,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 1050px;
-    height: 810px;
+    width: auto;
+    height: auto;
     position: relative;
     margin: 10px auto;
 }
@@ -26,8 +26,8 @@
 }
 
 .shadow_animat{
-    width: 989px;
-    height: 803px;
+    width: 990px;
+    height: 100%;
     display: flex;
     z-index: -1;
     box-sizing: border-box;

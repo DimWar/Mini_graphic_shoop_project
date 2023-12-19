@@ -45,19 +45,45 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     </a>
   </div>
 </nav>
-
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+<!-- navbar section start -->
+<div class="dis_black">
+<nav class="nav_bar">
+  <!-- Avatar image in top left corner -->
+  <!--  <img src="IMG_20221109_192257_362.jpg" style="width:100%"> -->
+  <img src="assets/img/IMG_20221109_192257_362.jpg" alt="Armin" class="w3-center w3-circle ">
+  <div class="buttons_nav">
+  <a href="#" class="w3-button">
+    <div class="center">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+    </div>
+  </a>
+  <a href="#about" class="w3-button">
+  <div class="center">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+    </div>
+  </a>
+  <a href="#photos" class="w3-button">
+  <div class="center">
+      <i class="fa fa-eye w3-xxlarge"></i>
+      <p>PHOTOS</p>
+    </div>
+  </a>
+  <a href="#contact" class="w3-button">
+  <div class="center">
+      <i class="fa fa-envelope w3-xxlarge"></i>
+      <p>CONTACT</p>
+    </div>
+    </a>
   </div>
+</nav>
 </div>
+<!-- navbar section end -->
+
 
 <!-- Page Content -->
-<div class="inline_disp" >
+<div class="inline_disp mar_0 mar_t_25" >
   <!-- Header/Home -->
   <header class="head" id="home">
     <div class="shadow_animat"></div>
@@ -128,46 +154,73 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     <span class="t_2_a">he's my best firend</span>
     </div>
     </div>
+    <div class="person_box" id="person_3">
+    <img src="assets/img/young-bearded-man-with-striped-shirt_273609-5677.jpg" alt="Hadi" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <div class="text_1">
+    <span class="t_3_a">jack ma</span>
+    <span class="t_4_a">he's my best firend</span>
+    </div>
+    </div>
   </div>
   <!-- End About Section -->
   </div>
   
   <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
+  <div class="w3-content" id="photos">
     <div class="port_sec">
     <h2 class="w3-text-light-grey" id="my_photos">My Photos</h2>
     </div>
     <!-- Grid for photos -->
-    <!-- <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="assets/img/1 (2).jpg" style="width:100%">
+     <div class="photo_grid">
+      <div class="pics">
+        <img src="assets/img/pic (1).jpg" class="pics mart_1" >
       </div>
-      <div class="w3-half">
-        <img src="assets/img/1 (3).jpg" style="width:100%">
+      <div class="pics">
+        <img src="assets/img/pic (2).jpg" class="pics mart_1" >
         </div>
-        
-        <div class="w3-half">
-        <img src="assets/img/1 (5).jpg" style="width:100%">
+        <div class="pics">
+        <img src="assets/img/pic (3).jpg" class="pics mart_1"> 
       </div>
-      <div class="w3-half">
-        <img src="assets/img/amir.jpg.webp" style="width:100%">
+      <div class="pics">
+        <img src="assets/img/pic (4).jpg" class="pics mart_1" >
       </div>
-       End photo grid -->
+       <!-- End photo grid  -->
    
   <!-- End Portfolio Section -->
   </div>
 
   <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey footer" id="contact">
+  <div class="marg" id="contact">
     <div class="contact">
     <h2 class="w3-text-light-grey" id="contact_me">Contact Me</h2>
     </div>
 
     <div class="w3-section loct">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> ILAM, IR</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +98 9184627263</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: amirhossein1381.parseh@gmail.com</p>
-    </div><br>
+      <div class="locat_dis">
+      <div class="contact_icon">
+      <i class="fa fa-map-marker icon_size"></i>  
+      </div>
+      <div class="contact_text">
+      <p id="location_1">location: ILAM, IR</p>
+      </div>
+      </div>
+      <div class="locat_dis">
+      <div class="contact_icon">
+      <i class="fa fa-phone icon_size"></i>
+      </div>
+      <div class="contact_text">
+      <p>Phone: +98 9184627263</p>
+      </div>
+      </div>
+      <div class="locat_dis">
+      <div class="contact_icon">
+      <i class="fa fa-envelope icon_size"></i>
+      </div>
+      <div class="contact_text">
+      <p>Email: amirhossein1381.parseh@gmail.com</p>
+      </div>
+      </div>
+    </div>
 
     <!-- <form action="/action_page.php" target="_blank">
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>

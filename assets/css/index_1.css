@@ -1,4 +1,3 @@
-
 @import url("w3styles/document.css");
 @import url("w3styles/clases.css");
 @import url("w3styles/icon.css");
@@ -12,11 +11,17 @@
 @import url("custom_style/photos_style.css");
 
 
+*{
+  transition: all .3s linear;
+}
+
 
 /* header bac color */
 .custom_bac_color{
   background: #232429;
 }
+
+
 
 
 /*!

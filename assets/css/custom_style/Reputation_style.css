@@ -23,11 +23,16 @@
     border-radius: 12px;
     margin-bottom: 12px;
     transition: all .3s linear;
+    cursor: pointer;
+    margin-bottom: 25px;
 }
 
 .person_box img{
     width: 65px!important;
+    height: 65px!important;
     border-radius: 50%;
+    background-size: cover;
+    background-clip: border-box;
 }
 
 .person_box .text_1{
@@ -51,19 +56,19 @@
     left: -6px;
 }
 
-#person_1{
-    margin-bottom: 35px;
-}
-
-
 #person_1:hover{
     transform: scale(1.05);
-    box-shadow:  0px 0px 10px 1px  #444444e9;
+    box-shadow:  0px 0px 10px 1px  #2a9d90c5;
 }
 
 #person_2:hover{
     transform: scale(1.05);
-    box-shadow:  0px 0px 10px 1px  #444444e9;
+    box-shadow:  0px 0px 10px 1px  #e76f51cd;
+}
+
+#person_3:hover{
+    transform: scale(1.05);
+    box-shadow:  0px 0px 10px 1px  #e9c56aca;
 }
 
 .t_1_a{
@@ -74,5 +79,16 @@
 }
 
 .t_2_a{
+    font-size: 13px;
+}
+
+.t_3_a{
+    font-size: 16px;
+    position: relative;
+    left: -32px;
+    margin-bottom: 7px;
+}
+
+.t_4_a{
     font-size: 13px;
 }

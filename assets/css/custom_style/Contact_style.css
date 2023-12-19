@@ -5,6 +5,10 @@
     justify-content: center;
 }
 
+.marg{
+    margin-top: 150px!important;
+}
+
 .footer{
     display: flex;
     flex-direction: column;
@@ -31,4 +35,35 @@
     background: #06d6a0;
     display: block;
     margin: 10px 0 0 40px;
+}
+
+.locat_dis{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    color: #8ca39d;
+}
+
+.locat_dis .contact_text{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    margin-left: 25px;
+}
+
+.locat_dis .icon_size{
+    font-size: 35px;
+}
+
+.locat_dis .contact_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#location_1{
+    margin-left: 11px;
 }
