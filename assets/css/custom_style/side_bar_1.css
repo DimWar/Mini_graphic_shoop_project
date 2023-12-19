@@ -52,14 +52,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
-    top: 20px;
-    left: 130px;
+    flex-wrap: wrap;
+    position: relative;
+    margin:25px 110px;
     z-index: 3;
     background: #4e4e4e9b;
     backdrop-filter: blur(5px);
     border-radius: 70px;
-    width: 580px;
+    width: auto;
     padding: 2.5px;
 }
 
@@ -105,4 +105,9 @@
 .dis_black{
     display: none;
     transition: all .4s linear;
+    width: auto;
+    display: none;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
 }

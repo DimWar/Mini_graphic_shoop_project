@@ -194,8 +194,18 @@
         font-size: 20px;
         font-weight: 300;
     }
-    .shadow_animat{
-        width: 555px!important;
+}
+
+
+@media (max-width: 630px) {
+    .dis_none{
+        display: none!important;
+    }
+}
+
+@media (max-width: 470px) {
+    .dis_none_2{
+        display: none!important;
     }
 }
 
@@ -227,11 +237,6 @@
     #cout_2 , #cout_3 , #cout_4{
         width: 220px!important;
     }
-
-    .shadow_animat{
-        width: 420px!important;
-    }
-
     .pics{
         width: 320px!important;
         height: 393px!important;
@@ -401,9 +406,6 @@
         width: 100%
     }
 
-    .shadow_animat{
-        width: 280px!important;
-    }
 }
 
 @media (max-width: 768px) {

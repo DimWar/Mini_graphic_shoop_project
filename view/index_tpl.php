@@ -58,19 +58,19 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     <p>HOME</p>
     </div>
   </a>
-  <a href="#about" class="w3-button">
+  <a href="#about" class="w3-button dis_none_2">
   <div class="center">
     <i class="fa fa-user w3-xxlarge"></i>
     <p>ABOUT</p>
     </div>
   </a>
-  <a href="#photos" class="w3-button">
+  <a href="#photos" class="w3-button dis_none">
   <div class="center">
-      <i class="fa fa-eye w3-xxlarge"></i>
+      <i class="fa fa-eye w3-xxlarge" ></i>
       <p>PHOTOS</p>
     </div>
   </a>
-  <a href="#contact" class="w3-button">
+  <a href="#contact" class="w3-button dis_none">
   <div class="center">
       <i class="fa fa-envelope w3-xxlarge"></i>
       <p>CONTACT</p>
