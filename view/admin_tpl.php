@@ -54,9 +54,11 @@
         <div class="drag-area">
             <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
             <label for="file" class="button">browse File
-            <input type="file" name="file" id="file" class="dis_none">
+            <input type="file" name="file-image" id="file" class="dis_none">
             </label>
             <!-- <button>Browse File</button> -->
+            <input type="submit" value="send" style="display:block">
+
         </div>
     </form>
  
