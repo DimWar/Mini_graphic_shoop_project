@@ -78,7 +78,7 @@ main{
 
 
 .send_btn label{
-    background: var(--background_color05);
+    background: var(--background_color13);
     color: var(--text_color03);
     padding: 12px 17px;
     border-radius: 7px;
@@ -89,7 +89,7 @@ main{
 }
 
 .send_btn label:hover{
-    background: var(--background_color04);
+    background: var(--background_color12);
     transform: scale(1.04);
 }
 
