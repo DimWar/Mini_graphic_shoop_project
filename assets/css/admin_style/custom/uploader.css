@@ -1,0 +1,120 @@
+
+main{
+    display: block;
+}
+
+.drag-area{
+    height: 450px;
+    width: 600px;
+    border-radius: 7px;
+    border: 4px dashed var(--background_color04);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+
+.up_img{
+    position: relative;
+    width: 700px;
+    height: auto;
+    margin: 105px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.drag-area .dis_none{
+    display: none;
+}
+
+.drag-area.active{
+    border: 4px solid var(--background_color05);
+    box-shadow: var(--shadow_01);
+}
+
+.drag-area .icon{
+    font-size: 80px;
+    color: var(--text_color04);
+}
+
+.drag-area header{
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--text_color04);
+}
+
+.drag-area span{
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--text_color04);
+    margin: 10px 0 15px 0;
+}
+
+.drag-area .button{
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 400;
+    background: var(--background_color05);
+    color: var(--text_color03);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--trans_04);
+    margin-top: 25px;
+}
+
+.drag-area .button:hover{
+    background: var(--background_color04);
+    transform: scale(1.04);
+}
+
+.drag-area img{
+    height: 95%;
+    width: 95%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+.send_btn label{
+    background: var(--background_color05);
+    color: var(--text_color03);
+    padding: 12px 17px;
+    border-radius: 7px;
+    position: absolute;
+    bottom: -61px;
+    right: 46px;
+    cursor: pointer;
+}
+
+.send_btn label:hover{
+    background: var(--background_color04);
+    transform: scale(1.04);
+}
+
+/* media queres */
+
+@media (max-width: 745px) {
+    
+    .drag-area .button{
+        padding: 8px 20px;
+        font-size: 18px;
+    }
+
+    .drag-area{
+        height: 400px;
+        width: 350px;
+    }
+
+    .drag-area header{
+        font-size: 25px;
+    }
+
+    .drag-area .icon{
+        font-size: 60px;
+    }
+
+}
+
+
