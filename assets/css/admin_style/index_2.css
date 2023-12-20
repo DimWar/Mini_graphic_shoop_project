@@ -94,6 +94,7 @@ main{
     justify-content: center;
     flex-direction: column;
     margin: 105px auto;
+    position: relative;
 }
 
 .drag-area .dis_none{
@@ -135,6 +136,11 @@ main{
     margin-top: 25px;
 }
 
+.drag-area .button:hover{
+    background: var(--background_color04);
+    transform: scale(1.04);
+}
+
 .drag-area img{
     height: 95%;
     width: 95%;
@@ -142,6 +148,22 @@ main{
     border-radius: 5px;
 }
 
+
+.send_btn label{
+    background: var(--background_color11);
+    color: var(--text_color03);
+    padding: 12px 17px;
+    border-radius: 7px;
+    position: absolute;
+    bottom: -61px;
+    right: 0;
+    cursor: pointer;
+}
+
+.send_btn label:hover{
+    background: var(--background_color09);
+    transform: scale(1.04);
+}
 
 /* media queres */
 

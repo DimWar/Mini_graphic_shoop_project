@@ -56,10 +56,13 @@
             <label for="file" class="button">browse File
             <input type="file" name="file-image" id="file" class="dis_none">
             </label>
-            <!-- <button>Browse File</button> -->
-            <input type="submit" value="send" style="display:block">
-
+            <div class="send_btn">
+                <label for="send" >SEND    
+                    <input type="button" value="" id="send" style="display: none;">
+                </label>
+            </div>
         </div>
+
     </form>
  
 
