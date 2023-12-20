@@ -8,10 +8,10 @@ var fileobj;
 
 
 
-button.onclick = ()=>{
-    input.click();
-    // flie_browse();
-}
+// button.onclick = ()=>{
+//     input.click();
+//     flie_browse();
+// }
 
 input.addEventListener("change" , function(){
     file = this.files[0];
@@ -49,8 +49,8 @@ function showFile(){
         fileReader.readAsDataURL(file);
     }else{
         alert("This is not an Image File");
-        // dropArea.classList.remove("active");
-        // dragText.textContent = "Drag & Drop to Upload File";
+        dropArea.classList.remove("active");
+        dragText.textContent = "Drag & Drop to Upload File";
     }
 }
 

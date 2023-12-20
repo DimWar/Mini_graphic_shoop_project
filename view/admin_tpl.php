@@ -53,10 +53,12 @@
     <form action="proccess/proccess.php" method="post" enctype="multipart/form-data">
         <div class="drag-area">
             <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
-            <input type="file" name="file" id="file">
-            <button>Browse File</button>
+            <label for="file" class="button">browse File
+            <input type="file" name="file" id="file" class="dis_none">
+            </label>
+            <!-- <button>Browse File</button> -->
         </div>
-    </form>   
+    </form>
  
 
     <script src="assets/js/script.js"></script>
