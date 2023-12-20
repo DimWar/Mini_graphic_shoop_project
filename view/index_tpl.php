@@ -138,8 +138,8 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
   </div>
     
     <!-- Testimonials -->
-    <div class="person_sec">
     <h3 class="w3-padding-24 w3-text-light-grey" id="per_text">My Reputation</h3>  
+    <div class="person_sec">
     <div class="person_box" id="person_1">
     <img src="assets/img/1677185611606.jpg" alt="Hadi" class="w3-left w3-circle w3-margin-right" style="width:80px">
     <div class="text_1">
@@ -168,21 +168,21 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Portfolio Section -->
   <div class="w3-content" id="photos">
     <div class="port_sec">
-    <h2 class="w3-text-light-grey" id="my_photos">My Photos</h2>
+    <h2 class="w3-text-light-grey" id="my_photos">My certificates</h2>
     </div>
     <!-- Grid for photos -->
      <div class="photo_grid">
       <div class="pics">
-        <img src="assets/img/pic (1).jpg" class="pics mart_1" >
+        <img src="assets/img/PHP-Course.jpg" class="pics mart_1" >
       </div>
       <div class="pics">
-        <img src="assets/img/pic (2).jpg" class="pics mart_1" >
+        <img src="assets/img/AOSC-AutoCertificate.jpg" class="pics mart_1" >
         </div>
         <div class="pics">
-        <img src="assets/img/pic (3).jpg" class="pics mart_1"> 
+        <img src="assets/img/1-certificate.jpg" class="pics mart_1"> 
       </div>
       <div class="pics">
-        <img src="assets/img/pic (4).jpg" class="pics mart_1" >
+        <img src="assets/img/certificate.jpg" class="pics mart_1" >
       </div>
        <!-- End photo grid  -->
    

@@ -2,11 +2,11 @@
 <html>
 <head>
 <title>AmirHossein Parseh</title>
-<link rel="icon" type="png" href="../assets/img/IMG_20221109_192257_362.jpg">
+<link rel="icon" type="png" href="assets/img/IMG_20221109_192257_362.jpg">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="font-awesome.min.css">
-<link rel="stylesheet" href="../assets/css/index_1.css">
+<link rel="stylesheet" href="assets/css/index_1.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
 integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
 crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,7 +17,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 <nav class="asied_bar">
   <!-- Avatar image in top left corner -->
   <!--  <img src="IMG_20221109_192257_362.jpg" style="width:100%"> -->
-  <img src="../assets/img/IMG_20221109_192257_362.jpg" alt="Armin" class="w3-center w3-circle " style="width:100px">
+  <img src="assets/img/IMG_20221109_192257_362.jpg" alt="Armin" class="w3-center w3-circle " style="width:100px">
   <div class="buttons">
   <a href="#" class="w3-button">
     <div class="center">
@@ -50,7 +50,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 <nav class="nav_bar">
   <!-- Avatar image in top left corner -->
   <!--  <img src="IMG_20221109_192257_362.jpg" style="width:100%"> -->
-  <img src="../assets/img/IMG_20221109_192257_362.jpg" alt="Armin" class="w3-center w3-circle ">
+  <img src="assets/img/IMG_20221109_192257_362.jpg" alt="Armin" class="w3-center w3-circle ">
   <div class="buttons_nav">
   <a href="#" class="w3-button">
     <div class="center">
@@ -87,7 +87,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Header/Home -->
   <header class="head" id="home">
     <div class="shadow_animat"></div>
-    <img src="../assets/img/20221025_184940.jpg" alt="boy" class="img_res" width="992" height="1108">
+    <img src="assets/img/20221025_184940.jpg" alt="boy" class="img_res" width="992" height="1108">
   </header>
 
   <!-- About Section -->
@@ -138,24 +138,24 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
   </div>
     
     <!-- Testimonials -->
-    <h3 class="w3-padding-24 w3-text-light-grey" id="per_text">My Reputation</h3>  
     <div class="person_sec">
+    <h3 class="w3-padding-24 w3-text-light-grey" id="per_text">My Reputation</h3>  
     <div class="person_box" id="person_1">
-    <img src="../assets/img/1677185611606.jpg" alt="Hadi" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <img src="assets/img/1677185611606.jpg" alt="Hadi" class="w3-left w3-circle w3-margin-right" style="width:80px">
     <div class="text_1">
     <span class="t_1">Hadi Mohammadi</span>
     <span class="t_2">he's my best firend</span>
     </div>
     </div>
     <div class="person_box" id="person_2">
-    <img src="../assets/img/1677185866901.jpg" alt="Hadi" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <img src="assets/img/1677185866901.jpg" alt="Hadi" class="w3-left w3-circle w3-margin-right" style="width:80px">
     <div class="text_1">
     <span class="t_1_a">Armin Karimi</span>
     <span class="t_2_a">he's my best firend</span>
     </div>
     </div>
     <div class="person_box" id="person_3">
-    <img src="../assets/img/young-bearded-man-with-striped-shirt_273609-5677.jpg" alt="Hadi" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <img src="assets/img/young-bearded-man-with-striped-shirt_273609-5677.jpg" alt="Hadi" class="w3-left w3-circle w3-margin-right" style="width:80px">
     <div class="text_1">
     <span class="t_3_a">jack ma</span>
     <span class="t_4_a">he's my best firend</span>
@@ -168,21 +168,21 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Portfolio Section -->
   <div class="w3-content" id="photos">
     <div class="port_sec">
-    <h2 class="w3-text-light-grey" id="my_photos">My certificates</h2>
+    <h2 class="w3-text-light-grey" id="my_photos">My Photos</h2>
     </div>
     <!-- Grid for photos -->
      <div class="photo_grid">
       <div class="pics">
-        <img src="../assets/img/PHP-Course.jpg" class="pics mart_1" >
+        <img src="assets/img/pic (1).jpg" class="pics mart_1" >
       </div>
       <div class="pics">
-        <img src="../assets/img/AOSC-AutoCertificate.jpg" class="pics mart_1" >
+        <img src="assets/img/pic (2).jpg" class="pics mart_1" >
         </div>
         <div class="pics">
-        <img src="../assets/img/1-certificate.jpg" class="pics mart_1"> 
+        <img src="assets/img/pic (3).jpg" class="pics mart_1"> 
       </div>
       <div class="pics">
-        <img src="../assets/img/certificate.jpg" class="pics mart_1" >
+        <img src="assets/img/pic (4).jpg" class="pics mart_1" >
       </div>
        <!-- End photo grid  -->
    
