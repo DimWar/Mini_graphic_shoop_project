@@ -50,13 +50,13 @@
             </div>
         </div>
     </aside>
-    <form action="proccess/proccess.php" method="post" enctype="multipart/form-data"> 
-        <div class="drag-area"  ondragover="return false">
+    <form action="proccess/proccess.php" method="post" enctype="multipart/form-data">
+        <div class="drag-area">
             <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
             <input type="file" name="file" id="file">
             <button>Browse File</button>
         </div>
-       </form>
+    </form>   
  
 
     <script src="assets/js/script.js"></script>
