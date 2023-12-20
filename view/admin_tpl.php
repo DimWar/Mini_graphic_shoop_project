@@ -50,12 +50,13 @@
             </div>
         </div>
     </aside>
-    
-    <div class="drag-area" ondrop="upload_file(event)" ondragover="return false">
-        <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
-        <button>Browse File</button>
-        <input type="file" name="file" id="file">
-    </div>
+    <form action="proccess/proccess.php" method="post" enctype="multipart/form-data">
+        <div class="drag-area" ondrop="upload_file(event)" ondragover="return false">
+            <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+            <input type="file" name="file" id="file">
+            <button>Browse File</button>
+        </div>
+    </form>    
  
 
     <script src="assets/js/script.js"></script>

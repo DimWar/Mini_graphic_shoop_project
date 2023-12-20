@@ -1,4 +1,4 @@
- <?php 
+ <!-- <?php 
 
 if(isset($_FILES['file'])){
     $arr_file_types = ['image/png''image/jpg','image/jpeg','image/gif'];
@@ -21,4 +21,4 @@ if(isset($_FILES['file'])){
 
 }
 
-?>
+?> -->
