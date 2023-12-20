@@ -1,0 +1,46 @@
+aside{
+    display: block;
+}
+
+.side_bar{
+    box-shadow: var(--shadow_01);
+    width: 120px;
+    height: auto;
+    margin-left: 21px;
+    border-radius: 8px;
+    padding: 30px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+
+
+.side_bar .boutton_side a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: var(--text_color04);
+    background: var(--background_color00);
+    margin-top: 15px;
+    border-radius: 7px;
+    padding: 9px 10px;
+}
+
+.side_bar .boutton_side a:hover{
+    box-shadow: var(--shadow_04);
+    transform: scale(1.044);
+}
+
+.side_bar .boutton_side a i{
+    font-size: 22px!important;
+    background: transparent;
+}
+
+.side_bar .boutton_side a p{
+    font-size: 15px!important;
+    margin-top: 5px;
+    background: transparent;
+}

@@ -242,5 +242,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!-- END PAGE CONTENT -->
 </div>
 
+
+<script src="assets/js/script.js"></script>
 </body>
 </html>

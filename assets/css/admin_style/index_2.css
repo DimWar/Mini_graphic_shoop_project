@@ -1,0 +1,172 @@
+@import url("custom/side_bar.css");
+
+
+:root{
+    /* backgrounds */
+    --background_color00: #24282c;
+    --background_color01: #343a40;
+    --background_color02: #232429;
+    --background_color03: #191919;
+    --background_color04: #233d4d;
+    --background_color05: #005f73;
+    --background_color06: #ee9b00;
+    --background_color07: #f77f00;
+    --background_color08: #ca6702;
+    --background_color09: #5f0011;
+    --background_color10: #ab191e;
+    --background_color11: #e51818;
+    --background_color12: #2a9d8f;
+    --background_color13: #06d6a0;
+
+
+    /* text color */
+    --text_color01: #e1e1e2;
+    --text_color02: #dadada;
+    --text_color03: #caced2;
+    --text_color04: #aaadb1;
+    --text_color05: #6c757d;
+    --text_color06: #495057;
+
+    /* shadows */
+    --shadow_01: 0px 0px 12px 3px #0d275029, 0px 0px 7px 1px #ffffff14 ;
+    --shadow_02: 0px 0px 0px 2px #0d27500d, 0px 0px 3px 2px #ffffff0a;
+    --shadow_03: 0px 0px 5px 1px #006073c1;
+    --shadow_04: 0px 0px 5px 1px #2a9d90c5;
+    --shadow_05: 0px 0px 5px 1px #ae1f12b8;
+    --shadow_06: 0px 0px 5px 1px #831345d2;
+    --shadow_07: 0px 0px 5px 1px #e76f51cd;
+    --shadow_08: 0px 0px 5px 1px #f78000aa;
+    --shadow_09: 0px 0px 5px 1px #e9c56aca;
+    
+    /* liniear gradiant */
+    --background_lin: linear-gradient(45deg , #232429 , #d60e32 , 
+    #d1cd23 , #4f43a8 , #e13d5a);
+
+    /* trans */
+    --trans_01: all .3s linear ;
+    --trans_02: all .3s ease-in ;
+    --trans_03: all .3s ease ;
+    --trans_04: all .4s linear ;
+    --trans_01: all .4s ease-in ;
+    --trans_01: all .5s ease ;
+    --trans_01: all .5s linear ;
+        
+}
+
+
+*{
+    background: var(--background_color02);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: none;
+    text-wrap: nowrap;
+    transition: var(--trans_02);
+}
+
+
+.head_name{
+    box-shadow: var(--shadow_01);
+    width: fit-content;
+    padding: 11px 19px;
+    border-radius: 7px;
+    margin: 35px 0 45px 20px;
+    color: var(--text_color03);
+    text-shadow: 0 0 5px #2a9d8f;
+}
+
+
+
+main{
+    display: block;
+}
+
+.drag-area{
+    height: 450px;
+    width: 600px;
+    border-radius: 7px;
+    border: 4px dashed var(--background_color04);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 105px auto;
+}
+
+.drag-area input{
+    display: none;
+}
+
+.drag-area.active{
+    border: 4px solid var(--background_color05);
+    box-shadow: var(--shadow_01);
+}
+
+.drag-area .icon{
+    font-size: 80px;
+    color: var(--text_color04);
+}
+
+.drag-area header{
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--text_color04);
+}
+
+.drag-area span{
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--text_color04);
+    margin: 10px 0 15px 0;
+}
+
+.drag-area button{
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 400;
+    background: var(--background_color05);
+    color: var(--text_color03);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--trans_04);
+}
+
+.drag-area img{
+    height: 95%;
+    width: 95%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+/* media queres */
+
+@media (max-width: 745px) {
+    
+    .drag-area button{
+        padding: 8px 20px;
+        font-size: 18px;
+    }
+
+    .drag-area{
+        height: 400px;
+        width: 350px;
+    }
+
+    .drag-area header{
+        font-size: 25px;
+    }
+
+    .drag-area .icon{
+        font-size: 60px;
+    }
+
+}
+
+
+
+
+
