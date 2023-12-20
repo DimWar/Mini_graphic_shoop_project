@@ -53,7 +53,7 @@
     #ffff00,
     #ff0000 */
     background-size: 400px;
-    filter: blur(50px);
+    filter: blur(35px);
     animation: animat 30s linear infinite;
 }
 
@@ -63,7 +63,7 @@
         background-position: 0 0;
     }
     50%{
-        background-position: 350% 0;
+        background-position: 400% 0;
     }
     0%{
         background-position: 0 0;

@@ -1,5 +1,10 @@
 .person_sec{
-    margin: 100px -5px 0px 0;
+    margin: 25px -5px 0px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    transition: all .4s linear!important;
 }
 
 #per_text::after{
@@ -14,16 +19,16 @@
 
 .person_box{
     background: #45464f;
-    width: 330px;
+    width: 295px;
     height: 90px;
     padding: 8px 10px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     border-radius: 12px;
-    margin-bottom: 12px;
     transition: all .3s linear;
     cursor: pointer;
+    margin-right: 25px;
     margin-bottom: 25px;
 }
 

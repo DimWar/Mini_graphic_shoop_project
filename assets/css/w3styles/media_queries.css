@@ -151,11 +151,19 @@
     #cout_2 , #cout_3 , #cout_4{
         width: 265px;
     }
+    .pics{
+        width: 415px!important;
+        height: 393px!important;
+    }
 }
 
 @media (max-width: 1050px) {
     #cout_2 , #cout_3 , #cout_4{
         width: 235px;
+    }
+    .pics{
+        width: 395px!important;
+        height: 393px!important;
     }
 }
 
@@ -165,6 +173,31 @@
     }
     .shadow_animat{
         width: 670px!important;
+    }
+    .pics{
+        width: 375px!important;
+        height: 393px!important;
+    }
+}
+
+@media (max-width: 960px) {
+    .pics{
+        width: 350px!important;
+        height: 393px!important;
+    }
+}
+
+@media (max-width: 910px) {
+    .pics{
+        width: 325px!important;
+        height: 324px!important;
+    }
+}
+
+@media (max-width: 870px) {
+    .pics{
+        width: 300px!important;
+        height: 324px!important;
     }
 }
 
