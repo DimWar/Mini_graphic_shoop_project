@@ -43,7 +43,10 @@ function showFile(){
         let fileReader = new FileReader();
         fileReader.onload = ()=>{
             let fileURL = fileReader.result;
-            let imgTag = `<img src="${fileURL}" alt="">`;
+            let imgTag = `<img src="${fileURL}" alt="">
+            <label for="send" class="send_btn">SEND    
+            <input type="submit" value="" id="send">
+        </label>`;
             dropArea.innerHTML = imgTag ;
         }
         fileReader.readAsDataURL(file);

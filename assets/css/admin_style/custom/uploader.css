@@ -77,7 +77,7 @@ main{
 }
 
 
-.send_btn label{
+.send_btn{
     background: var(--background_color13);
     color: var(--text_color03);
     padding: 12px 17px;
@@ -86,9 +86,11 @@ main{
     bottom: -61px;
     right: 46px;
     cursor: pointer;
+    text-align: center;
+    display: block!important;
 }
 
-.send_btn label:hover{
+.send_btn:hover{
     background: var(--background_color12);
     transform: scale(1.04);
 }

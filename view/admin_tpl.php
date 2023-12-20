@@ -59,7 +59,7 @@
                 <input type="file" name="file-image" id="file" class="dis_none">
                 </label>
                 <!-- <div class="send_btn"> -->
-                    <label for="send" >SEND    
+                    <label for="send" class="send_btn">SEND    
                         <input type="submit" value="" id="send">
                     </label>
                 <!-- </div> -->
