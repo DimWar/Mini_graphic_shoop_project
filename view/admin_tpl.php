@@ -50,20 +50,21 @@
             </div>
         </div>
     </aside>
-    <div class="up_img">
+    
     <form action="proccess/proccess.php" method="post" enctype="multipart/form-data">
-        <div class="drag-area">
-            <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
-            <label for="file" class="button">browse File
-            <input type="file" name="file-image" id="file" class="dis_none">
-            </label>
+        <div class="up_img">
+            <div class="drag-area">
+                <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                <label for="file" class="button">browse File
+                <input type="file" name="file-image" id="file" class="dis_none">
+                </label>
+                <!-- <div class="send_btn"> -->
+                    <label for="send" >SEND    
+                        <input type="submit" value="" id="send">
+                    </label>
+                <!-- </div> -->
+            </div>
         </div>
-        <div class="send_btn">
-            <label for="send" >SEND    
-                <input type="button" value="" id="send" style="display: none;">
-            </label>
-        </div>
-    </div>
     </form>
  
 
