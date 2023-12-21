@@ -57,7 +57,7 @@
  
 
 <!-- input contact start -->
-    <form action="../proccess/proccess_contact_me.php" method="post" > 
+    <form action="../proccess/proccess_contact_me.php?action=edit" method="post" > 
         <div class="cont_sec">
             <h3 class="form_text">Add Contact Me</h3>  
             <div class="cont_form">

@@ -1,15 +1,10 @@
 <?php
-// session_start() ;
-// date_default_timezone_set('Asia/Tehran') ;
-
 require 'constants.php' ;
 require 'config.php' ;
-require BASE_PATH . 'libs/helpers.php' ;
-// require BASE_PATH . 'libs/validate_libs.php' ;
-// require BASE_PATH . 'libs/user_libs.php' ;
-// require BASE_PATH . 'libs/file_libs.php' ;
-// require BASE_PATH . 'libs/product.php' ;
-// require BASE_PATH . 'vendor/autoload.php' ;
+require BASE_PATH . 'helpers/helpers.php' ;
+require BASE_PATH . 'utilities/utilities.php' ;
+
+
 
 #connect to database
 try {
