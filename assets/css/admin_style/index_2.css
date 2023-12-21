@@ -84,101 +84,27 @@
 }
 
 
-.cont_sec{
-    box-shadow: var(--shadow_01);
-    border: 3px solid #2a9d8f;
-    padding: 3px 5px;
-    width: 500px;
-    height: 450px;
-    margin: 105px auto;
-    border-radius: 12px;
-    position: relative;
-    text-align: center;
+.skill_sec{
+    /* box-shadow: var(--shadow_10); */
+    background-color: #005f73;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
-}
-
-.cont_form{
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    /* background: #005f73; */
-    box-shadow: var(--shadow_10);
-    padding: 15px 25px;
-    border-radius: 8px;
-    margin: 0 auto;
-    color: var(--text_color04);
-    position: relative;
-}
-
-.cont_form .inp{
-    background: transparent;
-    margin: 15px 20px;
-}
-
-.cont_form .inp input{
-    border-radius: 3px;
-    background: transparent;
-    border: 1.6px solid #495057;
-    padding: 3px 8px;
-}
-
-.cont_form .inp input:focus{
-    border: 1.9px solid #5f0011;
-}
-
-.cont_form .inp input:user-valid{
-    border: 1.9px solid #217b70;
-}
-
-#phon_inp{
-    margin-left: 19px;
-}
-
-#email_inp{
-    margin-left: 21px;
-}
-
-.color_te{
+    width: 80%;
+    height: auto;
+    padding: 15px 35px;
     color: var(--text_color03);
+    text-align: center;
 }
 
-.btn_sec{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: absolute;
-    bottom: -62px;
-    right: 0;
+.mar_0{
+    margin: 15px auto!important;
 }
 
-.inp_btn{
-    /* background: var(--background_color06); */
-    padding: 8px 15px;
-    border-radius: 7px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
-    cursor: pointer;
-}
-
-.delet_btn{
+.del_color{
     background: var(--background_color10);
 }
-
-.delet_btn:hover{
+.del_color:hover{
     background: var(--background_color09);
 }
-
-.edit_btn{
-    background: var(--background_color13);
-}
-
-.edit_btn:hover{
-    background: var(--background_color12);
-}
-
