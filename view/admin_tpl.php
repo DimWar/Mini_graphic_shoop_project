@@ -37,7 +37,7 @@
                     <i class="fa-regular fa-lightbulb"></i>
                     <p class="botton_text">skills</p>
                 </a>
-                <a href="#" class="button">
+                <a href="view/about_me_tpl.php" class="button">
                     <i class="fa-solid fa-pencil"></i>
                     <p class="botton_text">about me</p>
                 </a>
@@ -45,7 +45,7 @@
                     <i class="fa-solid fa-certificate"></i>
                     <p class="botton_text">Certificate</p>
                 </a>
-                <a href="#" class="button">
+                <a href="view/contact_me_tpl.php" class="button">
                     <i class="fa-solid fa-paper-plane"></i>
                     <p class="botton_text">contact me</p>
                 </a>

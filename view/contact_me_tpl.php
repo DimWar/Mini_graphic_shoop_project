@@ -57,28 +57,25 @@
  
 
 <!-- input contact start -->
-    <form action="">
+    <form action="../proccess/proccess_contact_me.php" method="post" > 
         <div class="cont_sec">
-        <h3 class="form_text">Add Contact Me</h3>  
-        <div class="cont_form">
-            <label for="locarion_inp" class="inp">Location
-            <input type="text" value="" id="locarion_inp" class="color_te" required>
-        </label>
-        <label for="phon_inp" class="inp">Phone
-            <input type="text" placeholder="+98" value="" class="color_te" id="phon_inp" required>
-        </label>
-        <label for="email_inp" class="inp">Email
-            <input type="email" value="" class="color_te" id="email_inp" required>
-        </label>
-        <div class="btn_sec">
-        <label for="delet_btn" class="inp_btn delet_btn">Delete
-            <input type="button" value="" id="delet_btn">
-        </label>
-        <label for="edit_btn" class="inp_btn edit_btn">Edit
-            <input type="submit" value="" id="edit_btn">
-        </label>
-        </div>
-    </div>
+            <h3 class="form_text">Add Contact Me</h3>  
+            <div class="cont_form">
+                <label for="locarion_inp" class="inp">Location
+                <input type="text" name="location" value="" id="locarion_inp" class="color_te" required>
+            </label>
+            <label for="phon_inp" class="inp">Phone
+                <input type="text" name="phone" placeholder="+98" value="" class="color_te" id="phon_inp" required>
+            </label>
+            <label for="email_inp" class="inp">Email
+                <input type="email" name="email" value="" class="color_te" id="email_inp" required>
+            </label>
+                <div class="btn_sec">
+                <label for="edit_btn" class="inp_btn edit_btn">continue
+                    <input type="submit" name="submit" value="" id="edit_btn">
+                </label>
+                </div>
+            </div>
         </div>
     </form>
 <!-- input contact end -->
