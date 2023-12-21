@@ -1,5 +1,6 @@
 @import url("custom/side_bar.css");
 @import url("custom/uploader.css");
+@import url("custom/add_info.css");
 
 
 :root{
@@ -29,6 +30,7 @@
     --text_color06: #495057;
 
     /* shadows */
+    --shadow_00: 0px 0px 12px 20px #2a9d8f, 0px 0px 7px 5px #ffffff36 ;
     --shadow_01: 0px 0px 12px 3px #0d275029, 0px 0px 7px 1px #ffffff14 ;
     --shadow_02: 0px 0px 0px 2px #0d27500d, 0px 0px 3px 2px #ffffff0a;
     --shadow_03: 0px 0px 5px 1px #006073c1;
@@ -78,7 +80,6 @@
     color: var(--text_color03);
     text-shadow: 0 0 5px #2a9d8f;
 }
-
 
 
 

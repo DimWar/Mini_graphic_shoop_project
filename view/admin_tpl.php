@@ -11,7 +11,7 @@
 </head>
 <body>
     
-
+<!-- head name start -->
     <header>
         <div class="head_name">
             <h1>
@@ -19,7 +19,9 @@
             </h1>
         </div>
     </header>
-    
+<!-- head name end -->
+
+<!-- sidebar name start -->    
     <aside>
         <div class="side_bar">
             <div class="boutton_side">
@@ -50,7 +52,9 @@
             </div>
         </div>
     </aside>
-    
+<!-- sidebar name end -->
+
+<!-- uploader name start -->    
     <form action="proccess/proccess.php" method="post" enctype="multipart/form-data">
         <div class="up_img">
             <div class="drag-area">
@@ -66,7 +70,7 @@
             </div>
         </div>
     </form>
- 
+<!-- uploader name end --> 
 
     <script src="assets/js/script.js"></script>
 </body>

@@ -11,17 +11,62 @@
 </head>
 <body>
     
+<!-- head name start -->
+<header>
+    <div class="head_name">
+        <h1>
+            Admin Panel
+        </h1>
+    </div>
+</header>
+<!-- head name end -->
+    
 
-    <header>
-        <div class="head_name">
-            <h1>
-                Admin Panel
-            </h1>
+<!-- sidebar start -->
+    <aside>
+        <div class="side_bar">
+            <div class="boutton_side">
+                <a href="#" class="button"> 
+                    <i class="fa-solid fa-user-gear"></i>
+                    <p class="botton_text">profile</p>
+                </a>
+                <a href="#" class="button">
+                    <i class="fa-regular fa-image"></i>
+                    <p class="botton_text">image</p>
+                </a>
+                <a href="#" class="button">
+                    <i class="fa-regular fa-lightbulb"></i>
+                    <p class="botton_text">skills</p>
+                </a>
+                <a href="#" class="button">
+                    <i class="fa-solid fa-pencil"></i>
+                    <p class="botton_text">about me</p>
+                </a>
+                <a href="#" class="button">
+                    <i class="fa-solid fa-certificate"></i>
+                    <p class="botton_text">Certificate</p>
+                </a>
+                <a href="#" class="button">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <p class="botton_text">contact me</p>
+                </a>
+            </div>
         </div>
-    </header>
-    
-    
+    </aside>
+<!-- sidebar end -->
  
+
+<!-- input form start -->
+    <form action="">
+        <div class="form_sec">
+          <h3 class="form_text">Add Information</h3>  
+        <textarea name="" id="" cols="30" rows="10" class="inp_text"></textarea>
+        <label for="edit_btn" class="e_btn">Edit
+            <input type="button" value="" id="edit_btn">
+        </label>
+        </div>
+    </form>
+<!-- input form end -->
 
     <script src="assets/js/script.js"></script>
 </body>

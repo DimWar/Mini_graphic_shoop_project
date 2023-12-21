@@ -87,7 +87,9 @@ main{
     right: 46px;
     cursor: pointer;
     text-align: center;
-    display: block!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .send_btn:hover{
