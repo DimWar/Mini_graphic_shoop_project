@@ -1,0 +1,69 @@
+
+
+.center{
+    position: absolute;
+    top: -56px;
+    left: 158px;
+    color: var(--text_color05);
+}
+
+#cloude{
+    color: var(--text_color05);
+}
+
+.edit_cert{
+    height: 217px;
+    width: 279px;
+}
+
+.cert_editon{
+    font-size: 16px;
+    height: 216px;
+    width: 388px;
+}
+
+.cert_send{
+    right: 151px!important;
+    bottom: -155px!important;
+}
+
+.Range{
+    position: absolute;
+    box-shadow: var(--shadow_03);
+    bottom: -84px;
+    padding: 20px 25px;
+    border-radius: 7px;
+    color: var(--text_color04);
+}
+
+.Range input{
+    margin-left: 15px;
+    padding: 3px 5px;
+    border-radius: 4px;
+    color: var(--text_color05);
+}
+
+.Range input:focus{
+    box-shadow: inset 0 0px 20px 6px #494f5721;
+}
+
+.Range input:user-invalid{
+    box-shadow: inset 0 0px 20px 6px #494f5721 , 0px 0px 3px 1px #ae1f129f;
+}
+
+.Range input:user-valid{
+    box-shadow: inset 0 0px 20px 6px #494f5721 , 0px 0px 3px 1px #2a9d90aa;
+}
+
+
+.cert_editon i{
+    font-size: 50px;
+}
+
+.cert_editon label{
+    font-size: 15px!important;
+}
+
+.cert_marg{
+    margin-top: 266px!important;
+}
