@@ -2,6 +2,7 @@
 @import url("custom/uploader.css");
 @import url("custom/add_info.css");
 @import url("custom/contact_me.css");
+@import url("custom/skill_style.css");
 
 
 :root{
@@ -20,6 +21,7 @@
     --background_color11: #e51818;
     --background_color12: #217b70;
     --background_color13: #0aa87e;
+    --background_color14: #144d46;
 
 
     /* text color */
@@ -72,7 +74,6 @@
     transition: var(--trans_02);
 }
 
-
 .head_name{
     box-shadow: var(--shadow_01);
     width: fit-content;
@@ -83,28 +84,3 @@
     text-shadow: 0 0 5px #2a9d8f;
 }
 
-
-.skill_sec{
-    /* box-shadow: var(--shadow_10); */
-    background-color: #005f73;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 80%;
-    height: auto;
-    padding: 15px 35px;
-    color: var(--text_color03);
-    text-align: center;
-}
-
-.mar_0{
-    margin: 15px auto!important;
-}
-
-.del_color{
-    background: var(--background_color10);
-}
-.del_color:hover{
-    background: var(--background_color09);
-}

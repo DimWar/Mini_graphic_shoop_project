@@ -1,0 +1,130 @@
+
+/* skill style */
+
+
+.add_skill{
+    max-width: 432px;
+    height: 341px;
+    /* background: var(--background_color06); */
+    box-shadow: var(--shadow_10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px auto;
+    border-radius: 12px;
+    color: var(--text_color05);
+    
+}
+
+h3{
+    font-size: 27px;
+}
+
+.add_skill .labl{
+    box-shadow: var(--shadow_03);
+    border-radius: 8px;
+    padding: 12px 24px;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add_skill .inp{
+    background: transparent!important;
+    border-radius: 5px;
+    padding: 5px 8px;
+    margin-left: 15px;
+}
+
+.add_skill .inp:focus{
+    box-shadow: inset 0 0px 20px 6px #494f5721;
+}
+
+.add_skill .inp:user-invalid{
+    box-shadow: inset 0 0px 20px 6px #494f5721 , 0px 0px 3px 1px #ae1f129f;
+}
+
+.add_skill .inp:user-valid{
+    box-shadow: inset 0 0px 20px 6px #494f5721 , 0px 0px 3px 1px #2a9d90aa;
+}
+
+.add_skill #skill_percent{
+    margin-left: 22px;
+}
+
+#skill_inp_ed{
+    margin-left: 81px!important;
+}
+
+
+.send_skill_btn{
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow_10);
+    border-radius: 7px;
+    margin-top: 38px;
+    cursor: pointer;
+    position: relative!important;
+}
+
+
+.send_skill_btn:hover{
+    box-shadow: var(--shadow_04);
+}
+
+.list_skill{
+    box-shadow: var(--shadow_10);
+    width: 500px;
+    margin: 100px auto;
+    padding: 25px 35px;
+    color: var(--text_color04);
+    border-radius: 12px;
+}
+
+
+td, th {
+    border: 1px solid #2a2e33;
+    text-align: left;
+    padding: 5px 25px;
+    border-radius: 7px;
+}
+
+.edt_btn{
+    background: var(--background_color12);
+    padding: 10px 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 15px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.edt_btn:hover{
+    background: var(--background_color14);
+}
+
+.dlt_btn{
+    background: var(--background_color10);
+    padding: 10px 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 15px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.dlt_btn:hover{
+    background: var(--background_color09);
+}
+
+
+
+#name_table{
+    font-size: 30px;
+}

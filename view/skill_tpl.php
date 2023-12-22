@@ -12,17 +12,16 @@
 <body>
     
 <!-- head name start -->
-<header>
-    <div class="head_name">
-        <h1>
-            Admin Panel
-        </h1>
-    </div>
-</header>
+    <header>
+        <div class="head_name">
+            <h1>
+                Admin Panel
+            </h1>
+        </div>
+    </header>
 <!-- head name end -->
-    
 
-<!-- sidebar start -->
+<!-- sidebar name start -->    
     <aside>
         <div class="side_bar">
             <div class="boutton_side">
@@ -38,7 +37,7 @@
                     <i class="fa-regular fa-lightbulb"></i>
                     <p class="botton_text">skills</p>
                 </a>
-                <a href="#" class="button">
+                <a href="view/about_me_tpl.php" class="button">
                     <i class="fa-solid fa-pencil"></i>
                     <p class="botton_text">about me</p>
                 </a>
@@ -46,39 +45,123 @@
                     <i class="fa-solid fa-certificate"></i>
                     <p class="botton_text">Certificate</p>
                 </a>
-                <a href="#" class="button">
+                <a href="view/contact_me_tpl.php" class="button">
                     <i class="fa-solid fa-paper-plane"></i>
                     <p class="botton_text">contact me</p>
                 </a>
             </div>
         </div>
     </aside>
-<!-- sidebar end -->
- 
+<!-- sidebar name end -->
 
-<!-- input contact start -->
-    <form action="../proccess/proccess_contact_me.php?action=edit" method="post" > 
-        <div class="cont_sec">
-            <h3 class="form_text">Add New Skill</h3>  
-            <div class="cont_form">
-                <label for="edit_btn" class="inp_btn edit_btn mar_0">Add Skill
-                    <input type="submit" name="submit" value="" id="edit_btn">
-                </label>
-            <label for="phon_inp" class="inp">Name Skill
-                <input type="text" name="phone" value="" class="color_te" id="phon_inp" required>
+<!-- add skill start -->    
+    <form action="proccess/proccess.php" method="post" enctype="multipart/form-data" >
+        <div class="add_skill">
+            <h3 class="skill_name_sec">Add Your Skill</h3>
+            <label for="skill_inp" class="labl">
+                Add New Skill :
+                <input type="text" class="new_skill_inp inp" id="skill_inp" autofocus required>
             </label>
-                <div class="btn_sec">
-                <label for="edit_btn" class="inp_btn edit_btn">Edit
-                    <input type="submit" name="submit" value="" id="edit_btn">
-                </label>
-                <label for="edit_btn" class="inp_btn edit_btn del_color">Delete
-                    <input type="submit" name="submit" value="" id="edit_btn">
-                </label>
-                </div>
-            </div>
+            <label for="skill_percent" class="labl">
+                Skill Percent :
+                <input type="number" class="per_skill_inp inp" id="skill_percent" required>
+            </label>
+            <label for="send_btn" class="send_skill_btn">
+                Send
+                <input type="submit" value="" id="send_btn">
+            </label>
         </div>
+        <!-- user skill start --> 
+
+        <table class="list_skill">
+            <thead>
+                <tr>
+                    <th id="name_table">Your Skill</th>
+                </tr>
+                <tr>
+                    <th>Skill name</th>
+                    <th>Persent</th>
+                    <th>
+                        Edit / Delete
+                    </th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>html</th>
+                    <th>50%</th>
+                    <th>
+                        <label for="edit_btn" class="edt_btn">
+                            Edit
+                            <input type="submit" value="" id="edit_btn">
+                        </label>
+                        <label for="delete_btn" class="dlt_btn">
+                            Delete
+                            <input type="submit" value="" id="delete_btn">
+                        </label>
+                    </th>
+                    
+                </tr>   
+                <tr>
+                    <th>html</th>
+                    <th>50%</th>
+                    <th>
+                        <label for="edit_btn" class="edt_btn">
+                            Edit
+                            <input type="submit" value="" id="edit_btn">
+                        </label>
+                        <label for="delete_btn" class="dlt_btn">
+                            Delete
+                            <input type="submit" value="" id="delete_btn">
+                        </label>
+                    </th>
+
+                </tr>   
+                <tr>
+                    <th>html</th>
+                    <th>50%</th>
+                    <th>
+                        <label for="edit_btn" class="edt_btn">
+                            Edit
+                            <input type="submit" value="" id="edit_btn">
+                        </label>
+                        <label for="delete_btn" class="dlt_btn">
+                            Delete
+                            <input type="submit" value="" id="delete_btn">
+                        </label>
+                    </th>
+
+                </tr>   
+                <tr>
+                    <th>html</th>
+                    <th>50%</th>
+                    <th>
+                        <label for="edit_btn" class="edt_btn">
+                            Edit
+                            <input type="submit" value="" id="edit_btn">
+                        </label>
+                        <label for="delete_btn" class="dlt_btn">
+                            Delete
+                            <input type="submit" value="" id="delete_btn">
+                        </label>
+                    </th>
+
+                </tr>   
+            </tbody>
+        </table>
+
+
+        <!-- user skill end --> 
+        
+        
+        
+        
+
     </form>
-<!-- input contact end -->
+<!-- add skill end --> 
+
+
 
     <script src="assets/js/script.js"></script>
 </body>
