@@ -14,10 +14,16 @@
 .edit_cert{
     height: 217px;
     width: 279px;
+    margin: 5px 10px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+img:hover{
+    transform: scale(1.01);
 }
 
 .cert_editon{
-    font-size: 16px;
     height: 216px;
     width: 388px;
 }

@@ -64,7 +64,7 @@
                 <input type="file" name="file-image" id="file" class="dis_none">
                 </label>
                 <label for="number" class="Range">inter Certificate Range :
-                <input type="number" name="" id="" required>
+                <input type="number" name="" id="">
                 </label>
                 <!-- <div class="send_btn"> -->
                     <label for="send" class="send_btn cert_send">SEND    
