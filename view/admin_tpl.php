@@ -33,7 +33,7 @@
                     <i class="fa-regular fa-image"></i>
                     <p class="botton_text">image</p>
                 </a>
-                <a href="#" class="button">
+                <a href="view/skill_tpl.php" class="button">
                     <i class="fa-regular fa-lightbulb"></i>
                     <p class="botton_text">skills</p>
                 </a>

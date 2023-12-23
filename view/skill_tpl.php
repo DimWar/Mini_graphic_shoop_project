@@ -71,6 +71,7 @@
                 <input type="submit" value="" id="send_btn">
             </label>
         </div>
+    </form>
         <!-- user skill start --> 
 
         <table class="list_skill">
@@ -94,7 +95,7 @@
                     <th>
                         <label for="edit_btn" class="edt_btn">
                             Edit
-                            <input type="submit" value="" id="edit_btn">
+                            <a href="view/skill_edit_tpl.php"><input type="submit" value="" id="edit_btn"></a>
                         </label>
                         <label for="delete_btn" class="dlt_btn">
                             Delete
@@ -153,12 +154,6 @@
 
 
         <!-- user skill end --> 
-        
-        
-        
-        
-
-    </form>
 <!-- add skill end --> 
 
 
