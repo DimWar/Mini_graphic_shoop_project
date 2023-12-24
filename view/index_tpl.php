@@ -101,7 +101,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     <h3 class="w3-padding-16 w3-text-light-grey" id="my_skills">My Skills</h3>
     <p class="w3-wide">Photography</p>
     <div class="ref_color border_rad">
-      <div class="ref_color_2 border_rad_2" style="height:28px;width:95%"></div>
+      <div class="ref_color_2 border_rad_2" style="height:28px;width:23%"></div>
     </div>
     <p class="w3-wide ">Web Design</p>
     <div class="ref_color border_rad">

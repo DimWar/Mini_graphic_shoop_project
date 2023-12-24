@@ -15,3 +15,11 @@ function updateTextAbouteMe(string $text):bool{
     $stmt->execute([':text'=>$text]) ;
     return $stmt->rowCount() ? true : false ;
 }
+
+function deleteSkillById($skillId):bool {
+    global $pdo ;
+    $sql = "DELETE  FROM `my-skills` WHERE id=:id" ;
+    $stmt = $pdo -> prepare($sql) ;
+    $stmt->execute([':id'=>$skillId]) ;
+    return $stmt->rowCount() ? true : false;
+}

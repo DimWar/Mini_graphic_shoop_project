@@ -16,16 +16,16 @@
 <!-- sidebar and header end -->
 
 <!-- add skill start -->    
-    <form action="proccess/proccess.php" method="post" enctype="multipart/form-data" >
+    <form action="skillEdit.php?update_skill=<?= $_GET['update_skill']; ?>" method="post"  >
         <div class="add_skill">
             <h3 class="skill_name_sec">Edit Your Skill</h3>
             <label for="skill_inp" class="labl">
                 Skill :
-                <input type="text" class="new_skill_inp inp" id="skill_inp_ed" autofocus required>
+                <input type="text" name="skillName" class="new_skill_inp inp" id="skill_inp_ed" autofocus required>
             </label>
             <label for="skill_percent" class="labl">
                 Skill Percent :
-                <input type="number" class="per_skill_inp inp" id="skill_percent" required>
+                <input type="number" name="skillNumber" class="per_skill_inp inp" id="skill_percent" required>
             </label>
             <label for="send_btn" class="send_skill_btn">
                 Send

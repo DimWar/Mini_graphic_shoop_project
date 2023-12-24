@@ -10,22 +10,24 @@
     <link rel="stylesheet" href="assets/css/admin_style/index_2.css">
 </head>
 <body>
-    
+<!-- session alert start -->
+<?php include 'tools/session_alert.php'; ?>
+<!-- session alert end -->    
 <!-- sidebar adn header start -->
 <?php include 'tools/side_bar.php'; ?>
 <!-- sidebar and header end -->
 
 <!-- add skill start -->    
-    <form action="proccess/proccess.php" method="post" enctype="multipart/form-data" >
+    <form action="skill.php" method="post" >
         <div class="add_skill">
             <h3 class="skill_name_sec">Add Your Skill</h3>
             <label for="skill_inp" class="labl">
                 Add New Skill :
-                <input type="text" class="new_skill_inp inp" id="skill_inp" autofocus required>
+                <input type="text" name="nameSkill" class="new_skill_inp inp" id="skill_inp" autofocus required>
             </label>
             <label for="skill_percent" class="labl">
                 Skill Percent :
-                <input type="number" class="per_skill_inp inp" id="skill_percent" required>
+                <input type="number" name="numberSkill" class="per_skill_inp inp" id="skill_percent" required max='100' min='0'>
             </label>
             <label for="send_btn" class="send_skill_btn">
                 Send
@@ -34,7 +36,6 @@
         </div>
     </form>
         <!-- user skill start --> 
-
         <table class="list_skill">
             <thead>
                 <tr>
@@ -50,70 +51,27 @@
                 </tr>
             </thead>
             <tbody>
+
+
+            <?php foreach($skillCurrentData as $key => $value): ?>
                 <tr>
-                    <th>html</th>
-                    <th>50%</th>
+                    <th><?= $value['name'] ?></th>
+                    <th><?= $value['number'] ?>%</th>
                     <th>
                         <label for="edit_btn" class="edt_btn">
-                            Edit
-                            <a href="view/skill_edit_tpl.php"><input type="submit" value="" id="edit_btn"></a>
+                            <a href="skillEdit.php?update_skill=<?= $value['id']; ?>"><input type="submit" value="" id="edit_btn">Edit</a>
                         </label>
                         <label for="delete_btn" class="dlt_btn">
-                            Delete
-                            <input type="submit" value="" id="delete_btn">
+                            <a href="?delete_skill=<?= $value['id']; ?>" onclick="return confirm('are you sure to delete skill ?');"><input type="submit" value="" id="delete_btn" >Delete</a>
                         </label>
                     </th>
                     
                 </tr>   
-                <tr>
-                    <th>html</th>
-                    <th>50%</th>
-                    <th>
-                        <label for="edit_btn" class="edt_btn">
-                            Edit
-                            <input type="submit" value="" id="edit_btn">
-                        </label>
-                        <label for="delete_btn" class="dlt_btn">
-                            Delete
-                            <input type="submit" value="" id="delete_btn">
-                        </label>
-                    </th>
-
-                </tr>   
-                <tr>
-                    <th>html</th>
-                    <th>50%</th>
-                    <th>
-                        <label for="edit_btn" class="edt_btn">
-                            Edit
-                            <input type="submit" value="" id="edit_btn">
-                        </label>
-                        <label for="delete_btn" class="dlt_btn">
-                            Delete
-                            <input type="submit" value="" id="delete_btn">
-                        </label>
-                    </th>
-
-                </tr>   
-                <tr>
-                    <th>html</th>
-                    <th>50%</th>
-                    <th>
-                        <label for="edit_btn" class="edt_btn">
-                            Edit
-                            <input type="submit" value="" id="edit_btn">
-                        </label>
-                        <label for="delete_btn" class="dlt_btn">
-                            Delete
-                            <input type="submit" value="" id="delete_btn">
-                        </label>
-                    </th>
-
-                </tr>   
+            <?php endforeach ?>    
+               
+                
             </tbody>
         </table>
-
-
         <!-- user skill end --> 
 <!-- add skill end --> 
 
