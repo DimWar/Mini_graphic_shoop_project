@@ -2,5 +2,4 @@
 include 'bootstrap/init.php' ;
 
 
-
-require 'view/admin_tpl.php' ;
+require 'view/skill_edit_tpl.php' ;

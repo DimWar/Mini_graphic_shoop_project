@@ -15,7 +15,23 @@
 <?php include 'tools/side_bar.php'; ?>
 <!-- sidebar and header end -->
 
-    <h1 style="text-align: center;color:white;">Welcome To Admin Pannel</h1>
+<!-- uploader name start -->    
+    <form action="proccess/proccess.php" method="post" enctype="multipart/form-data">
+        <div class="up_img">
+            <div class="drag-area">
+                <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                <label for="file" class="button">browse File
+                <input type="file" name="file-image" id="file" class="dis_none">
+                </label>
+                <!-- <div class="send_btn"> -->
+                    <label for="send" class="send_btn">SEND    
+                        <input type="submit" value="" id="send">
+                    </label>
+                <!-- </div> -->
+            </div>
+        </div>
+    </form>
+<!-- uploader name end --> 
 
     <script src="assets/js/script.js"></script>
 </body>

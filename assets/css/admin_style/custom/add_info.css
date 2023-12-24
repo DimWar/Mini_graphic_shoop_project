@@ -33,6 +33,7 @@
     color: var(--text_color02);
     font-size: 15px;
     padding: 5px 10px;
+    white-space:wrap;
 }
 
 .form_sec .inp_text:focus{

@@ -19,7 +19,7 @@ function setMessage(string $message):void{
     $_SESSION['messgae'] = $message ;
 }
 
-function dd($message){
+function pre($message){
     echo "<pre>" ;
     print_r($message) ;
     echo "</pre>" ;

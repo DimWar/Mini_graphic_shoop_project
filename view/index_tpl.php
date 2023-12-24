@@ -17,7 +17,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 <nav class="asied_bar">
   <!-- Avatar image in top left corner -->
   <!--  <img src="IMG_20221109_192257_362.jpg" style="width:100%"> -->
-  <img src="assets/img/IMG_20221109_192257_362.jpg" alt="Armin" class="w3-center w3-circle " style="width:100px">
+  <a href="admin.php"><img src="assets/img/IMG_20221109_192257_362.jpg" alt="Armin" class="w3-center w3-circle " style="width:100px"></a>
   <div class="buttons">
   <a href="#" class="w3-button">
     <div class="center">
@@ -92,11 +92,12 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey" id="my_name">My Name</h2>
-    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
+    <h2 class="w3-text-light-grey" id="my_name">About Me</h2>
+      <!-- aboute me text -->
+      <p>
+        <?= $textAbouteMe->text ; ?>
+      </p>
+      <!-- // aboute me text -->
     <h3 class="w3-padding-16 w3-text-light-grey" id="my_skills">My Skills</h3>
     <p class="w3-wide">Photography</p>
     <div class="ref_color border_rad">

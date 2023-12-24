@@ -11,49 +11,9 @@
 </head>
 <body>
     
-<!-- head name start -->
-<header>
-    <div class="head_name">
-        <h1>
-            Admin Panel
-        </h1>
-    </div>
-</header>
-<!-- head name end -->
-    
-
-<!-- sidebar start -->
-    <aside>
-        <div class="side_bar">
-            <div class="boutton_side">
-                <a href="#" class="button"> 
-                    <i class="fa-solid fa-user-gear"></i>
-                    <p class="botton_text">profile</p>
-                </a>
-                <a href="#" class="button">
-                    <i class="fa-regular fa-image"></i>
-                    <p class="botton_text">image</p>
-                </a>
-                <a href="#" class="button">
-                    <i class="fa-regular fa-lightbulb"></i>
-                    <p class="botton_text">skills</p>
-                </a>
-                <a href="#" class="button">
-                    <i class="fa-solid fa-pencil"></i>
-                    <p class="botton_text">about me</p>
-                </a>
-                <a href="#" class="button">
-                    <i class="fa-solid fa-certificate"></i>
-                    <p class="botton_text">Certificate</p>
-                </a>
-                <a href="#" class="button">
-                    <i class="fa-solid fa-paper-plane"></i>
-                    <p class="botton_text">contact me</p>
-                </a>
-            </div>
-        </div>
-    </aside>
-<!-- sidebar end -->
+<!-- sidebar adn header start -->
+<?php include 'tools/side_bar.php'; ?>
+<!-- sidebar and header end -->
  
 
 <!-- input contact start -->

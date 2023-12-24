@@ -11,58 +11,20 @@
 </head>
 <body>
     
-<!-- head name start -->
-<header>
-    <div class="head_name">
-        <h1>
-            Admin Panel
-        </h1>
-    </div>
-</header>
-<!-- head name end -->
-    
 
-<!-- sidebar start -->
-    <aside>
-        <div class="side_bar">
-            <div class="boutton_side">
-                <a href="#" class="button"> 
-                    <i class="fa-solid fa-user-gear"></i>
-                    <p class="botton_text">profile</p>
-                </a>
-                <a href="#" class="button">
-                    <i class="fa-regular fa-image"></i>
-                    <p class="botton_text">image</p>
-                </a>
-                <a href="#" class="button">
-                    <i class="fa-regular fa-lightbulb"></i>
-                    <p class="botton_text">skills</p>
-                </a>
-                <a href="#" class="button">
-                    <i class="fa-solid fa-pencil"></i>
-                    <p class="botton_text">about me</p>
-                </a>
-                <a href="#" class="button">
-                    <i class="fa-solid fa-certificate"></i>
-                    <p class="botton_text">Certificate</p>
-                </a>
-                <a href="#" class="button">
-                    <i class="fa-solid fa-paper-plane"></i>
-                    <p class="botton_text">contact me</p>
-                </a>
-            </div>
-        </div>
-    </aside>
-<!-- sidebar end -->
- 
+<?php include 'tools/session_alert.php'; ?> 
+
+<!-- sidebar adn header start -->
+<?php include 'tools/side_bar.php'; ?>
+<!-- sidebar and header end -->
 
 <!-- input form start -->
-    <form action="">
+    <form action="aboutMe.php" method="post">
         <div class="form_sec">
-          <h3 class="form_text">Add Information</h3>  
-        <textarea name="" id="" cols="30" rows="10" class="inp_text"></textarea>
-        <label for="edit_btn" class="e_btn">Edit
-            <input type="button" value="" id="edit_btn">
+          <h3 class="form_text">Edite Aboute Me</h3>  
+        <textarea name="newText" id="" cols="30" rows="10" class="inp_text"><?= $textAbouteMe->text ?></textarea>
+        <label for="edit_btn" class="e_btn">Update
+            <input type="submit" value="" id="edit_btn">
         </label>
         </div>
     </form>

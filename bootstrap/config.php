@@ -3,7 +3,7 @@
 $database_config =  (object)[
     'host' => 'localhost' ,
     'user' => 'root' ,
-    'dbname' => 'my-resume' ,
+    'dbname' => 'my-website' ,
     'pass' => '' ,
     'charset' => 'utf8mb4'
 ];
