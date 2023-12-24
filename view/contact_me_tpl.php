@@ -10,25 +10,27 @@
     <link rel="stylesheet" href="assets/css/admin_style/index_2.css">
 </head>
 <body>
-    
+<!-- session start -->
+<?php include 'tools/session_alert.php'; ?>
+<!-- session end -->    
 <!-- sidebar adn header start -->
 <?php include 'tools/side_bar.php'; ?>
 <!-- sidebar and header end -->
  
 
 <!-- input contact start -->
-    <form action="../proccess/proccess_contact_me.php?action=edit" method="post" > 
+    <form action="contactMe.php" method="post" > 
         <div class="cont_sec">
-            <h3 class="form_text">Add Contact Me</h3>  
+            <h3 class="form_text">Edit Contact Me</h3>  
             <div class="cont_form">
                 <label for="locarion_inp" class="inp">Location
-                <input type="text" name="location" value="" id="locarion_inp" class="color_te" required>
+                <input type="text" name="location" value="<?= $getCurrentContactMe->location ; ?>" id="locarion_inp" class="color_te" required>
             </label>
             <label for="phon_inp" class="inp">Phone
-                <input type="text" name="phone" placeholder="+98" value="" class="color_te" id="phon_inp" required>
+                <input type="text" name="phone" placeholder="+98" value="<?= $getCurrentContactMe->phone ; ?>" class="color_te" id="phon_inp" required min='11' max='11'>
             </label>
             <label for="email_inp" class="inp">Email
-                <input type="email" name="email" value="" class="color_te" id="email_inp" required>
+                <input type="email" name="email" value="<?= $getCurrentContactMe->email ; ?>" class="color_te" id="email_inp" required>
             </label>
                 <div class="btn_sec">
                 <label for="edit_btn" class="inp_btn edit_btn">continue

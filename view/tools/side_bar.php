@@ -34,6 +34,10 @@
                     <i class="fa-solid fa-paper-plane"></i>
                     <p class="botton_text">contact me</p>
                 </a>
+                <a href="myReputation.php" class="button">
+                    <i class="fa-solid fa-users"></i>
+                    <p class="botton_text">My Reputation</p>
+                </a>
             </div>
         </div>
 </aside>

@@ -99,18 +99,14 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
       </p>
       <!-- // aboute me text -->
     <h3 class="w3-padding-16 w3-text-light-grey" id="my_skills">My Skills</h3>
-    <p class="w3-wide">Photography</p>
-    <div class="ref_color border_rad">
-      <div class="ref_color_2 border_rad_2" style="height:28px;width:23%"></div>
-    </div>
-    <p class="w3-wide ">Web Design</p>
-    <div class="ref_color border_rad">
-      <div class="ref_color_2 border_rad_2" style="height:28px;width:85%"></div>
-    </div>
-    <p class="w3-wide">Photoshop</p>
-    <div class="ref_color border_rad">
-      <div class="ref_color_2 border_rad_2" style="height:28px;width:80%"></div>
-    </div>
+
+    <?php foreach($mySkills as $key => $value): ?>  
+      <p class="w3-wide"><?= $value['name'] ?></p>
+      <div class="ref_color border_rad">
+        <div class="ref_color_2 border_rad_2" style="height:28px;width:<?= $value['number']?>%"></div>
+      </div>
+    <?php endforeach ; ?>
+    
     <div class="count_bar">
     <div class="counter" id="cout_1">
       <div class="count_text">
@@ -141,27 +137,17 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Testimonials -->
     <h3 class="w3-padding-24 w3-text-light-grey" id="per_text">My Reputation</h3>  
     <div class="person_sec">
-    <div class="person_box" id="person_1">
-    <img src="assets/img/1677185611606.jpg" alt="Hadi" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <div class="text_1">
-    <span class="t_1">Hadi Mohammadi</span>
-    <span class="t_2">he's my best firend</span>
-    </div>
-    </div>
-    <div class="person_box" id="person_2">
-    <img src="assets/img/1677185866901.jpg" alt="Hadi" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <div class="text_1">
-    <span class="t_1_a">Armin Karimi</span>
-    <span class="t_2_a">he's my best firend</span>
-    </div>
-    </div>
-    <div class="person_box" id="person_3">
-    <img src="assets/img/young-bearded-man-with-striped-shirt_273609-5677.jpg" alt="Hadi" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <div class="text_1">
-    <span class="t_3_a">jack ma</span>
-    <span class="t_4_a">he's my best firend</span>
-    </div>
-    </div>
+
+    <?php foreach($getMyReputation as $key => $value): ?>
+      <div class="person_box" id="person_1">
+        <img src="https://picsum.photos/2560/2560?random=<?= rand(1,100) ;?>" alt="Hadi" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <div class="text_1">
+          <span class="t_1"><?= $value['name'] ?></span>
+          <span class="t_2"><?= $value['text'] ?></span>
+        </div>
+      </div>
+    <?php endforeach ?>
+    
   </div>
   <!-- End About Section -->
   </div>
@@ -202,7 +188,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
       <i class="fa fa-map-marker icon_size"></i>  
       </div>
       <div class="contact_text">
-      <p id="location_1">location: ILAM, IR</p>
+      <p id="location_1"><?= $contactMe->location ?></p>
       </div>
       </div>
       <div class="locat_dis">
@@ -210,7 +196,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
       <i class="fa fa-phone icon_size"></i>
       </div>
       <div class="contact_text">
-      <p>Phone: +98 9184627263</p>
+      <p>Phone: +98 <?= $contactMe->phone ?></p>
       </div>
       </div>
       <div class="locat_dis">
@@ -218,7 +204,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
       <i class="fa fa-envelope icon_size"></i>
       </div>
       <div class="contact_text">
-      <p>Email: amirhossein1381.parseh@gmail.com</p>
+      <p>Email: <?= $contactMe->email ?></p>
       </div>
       </div>
     </div>
