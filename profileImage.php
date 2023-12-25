@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             if(in_array($fileExtention , $allowedFileExtention)){
                 $uploadFileDirectory = 'assets/img/profile/' ;
                 $destPath = $uploadFileDirectory . $newFileName ;
-                
+
                 // check size upload file and uoload
                 $allowedFileSize = 5 * 1024 * 1024 ;
                 if ($fileSize < $allowedFileSize) {
