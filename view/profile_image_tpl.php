@@ -10,22 +10,24 @@
     <link rel="stylesheet" href="assets/css/admin_style/index_2.css">
 </head>
 <body>
-    
+ <!-- sidebar adn header start -->
+<?php include 'tools/session_alert.php'; ?>
+<!-- sidebar and header end -->   
 <!-- sidebar adn header start -->
 <?php include 'tools/side_bar.php'; ?>
 <!-- sidebar and header end -->
 
 <!-- uploader name start -->    
-    <form action="proccess/proccess.php" method="post" enctype="multipart/form-data">
+    <form action="profileImage.php" method="post" enctype="multipart/form-data">
         <div class="up_img">
             <div class="drag-area">
                 <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
-                <label for="file" class="button">browse File
-                <input type="file" name="file-image" id="file" class="dis_none">
-                </label>
+                    <label for="file-upload" class="button">browse File
+                        <input type="file" name="uploadFile" id="file-upload" class="dis_none">
+                    </label>
                 <!-- <div class="send_btn"> -->
                     <label for="send" class="send_btn">SEND    
-                        <input type="submit" value="" id="send">
+                        <input type="submit" name="uploadBtn" value="upload" id="send">
                     </label>
                 <!-- </div> -->
             </div>
@@ -33,6 +35,6 @@
     </form>
 <!-- uploader name end --> 
 
-    <script src="assets/js/script.js"></script>
+    <!-- <script src="assets/js/script.js"></script> -->
 </body>
 </html>

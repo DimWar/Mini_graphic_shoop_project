@@ -17,7 +17,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 <nav class="asied_bar">
   <!-- Avatar image in top left corner -->
   <!--  <img src="IMG_20221109_192257_362.jpg" style="width:100%"> -->
-  <a href="admin.php"><img src="assets/img/IMG_20221109_192257_362.jpg" alt="Armin" class="w3-center w3-circle " style="width:100px"></a>
+  <a href="admin.php"><img src="assets/img/profile/<?= $profileImage->url ?>" alt="Armin" class="w3-center w3-circle " style="width:100px"></a>
   <div class="buttons">
   <a href="#" class="w3-button">
     <div class="center">
@@ -87,7 +87,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Header/Home -->
   <header class="head" id="home">
     <div class="shadow_animat"></div>
-    <img src="assets/img/20221025_184940.jpg" alt="boy" class="img_res" width="992" height="1108">
+    <img src="assets/img/bagImage/<?= $profileBagImage->url ?>" alt="boy" class="img_res" width="992" height="1108">
   </header>
 
   <!-- About Section -->
