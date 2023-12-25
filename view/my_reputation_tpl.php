@@ -10,22 +10,24 @@
     <link rel="stylesheet" href="assets/css/admin_style/index_2.css">
 </head>
 <body>
-    
+ <!-- session start -->
+<?php include 'tools/session_alert.php'; ?>
+<!-- session end -->   
 <!-- sidebar adn header start -->
 <?php include 'tools/side_bar.php'; ?>
 <!-- sidebar and header end -->
 
 <!-- add skill start -->    
-    <form action="skillEdit.php?update_skill=<?= $_GET['update_r']; ?>" method="post"  >
+    <form action="myReputation.php" method="post"  >
         <div class="add_skill">
-            <h3 class="skill_name_sec">Edit Your Skill</h3>
-            <label for="skill_inp" class="labl">
-                Skill :
-                <input type="text" name="skillName" class="new_skill_inp inp" id="skill_inp_ed" autofocus required>
+            <h3 class="skill_name_sec">Add New Reputation</h3>
+            <label for="nameRep" class="labl">
+                name :
+                <input type="text" name="nameRep" class="new_skill_inp inp" id="skill_inp_ed" autofocus required>
             </label>
-            <label for="skill_percent" class="labl">
-                Skill Percent :
-                <input type="number" name="skillNumber" class="per_skill_inp inp" id="skill_percent" required>
+            <label for="commentRep" class="labl">
+                comment :
+                <input type="text" name="commentRep" class="new_skill_inp inp" id="skill_percent" required>
             </label>
             <label for="send_btn" class="send_skill_btn">
                 Send
@@ -34,7 +36,44 @@
         </div>
     </form>
 <!-- add skill end --> 
+<!-- user skill start --> 
+        <table class="list_skill">
+            <thead>
+                <tr>
+                    <th id="name_table">Your Reputation</th>
+                </tr>
+                <tr>
+                    <th>name</th>
+                    <th>comment</th>
+                    <th>
+                        Edit / Delete
+                    </th>
 
+                </tr>
+            </thead>
+            <tbody>
+
+
+            <?php foreach($myReputations as $key => $value): ?>
+                <tr>
+                    <th><?= $value['name'] ?></th>
+                    <th><?= $value['text'] ?></th>
+                    <th>
+                        <label for="edit_btn" class="edt_btn">
+                            <a href="MyReputationEdit.php?update_reputation=<?= $value['id']; ?>"><input type="submit" value="" id="edit_btn">Edit</a>
+                        </label>
+                        <label for="delete_btn" class="dlt_btn">
+                            <a href="?delete_reputation=<?= $value['id']; ?>" onclick="return confirm('are you sure to delete skill ?');"><input type="submit" value="" id="delete_btn" >Delete</a>
+                        </label>
+                    </th>
+                    
+                </tr>   
+            <?php endforeach ?>    
+               
+                
+            </tbody>
+        </table>
+        <!-- user skill end --> 
 
 
     <script src="assets/js/script.js"></script>
