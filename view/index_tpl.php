@@ -159,18 +159,12 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     </div>
     <!-- Grid for photos -->
      <div class="photo_grid">
-      <div class="pics">
-        <img src="assets/img/PHP-Course.jpg" class="pics mart_1" >
-      </div>
-      <div class="pics">
-        <img src="assets/img/AOSC-AutoCertificate.jpg" class="pics mart_1" >
-        </div>
+
+      <?php foreach($certificates as $key => $value): ?>
         <div class="pics">
-        <img src="assets/img/1-certificate.jpg" class="pics mart_1"> 
-      </div>
-      <div class="pics">
-        <img src="assets/img/certificate.jpg" class="pics mart_1" >
-      </div>
+          <img src="assets/img/certificate/<?= $value['url'] ?>" class="pics mart_1" >
+        </div>
+      <?php endforeach ?>
        <!-- End photo grid  -->
    
   <!-- End Portfolio Section -->

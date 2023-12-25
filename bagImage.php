@@ -31,21 +31,21 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 if ($fileSize < $allowedFileSize) {
                     if (move_uploaded_file($fileTmpName , $destPath)) {
                         addAddressBagImageToDb($newFileName) ;
-                        setMessageAndRedirect('Uploaded File Successfully' , 'profileImage.php') ;
+                        setMessageAndRedirect('Uploaded File Successfully' , 'bagImage.php') ;
                     }else{
-                        setMessageAndRedirect('Uploaded To File Filed !!' , 'profileImage.php') ;
+                        setMessageAndRedirect('Uploaded To File Filed !!' , 'bagImage.php') ;
                     }
                 }else{
-                    setMessageAndRedirect('File Size Invalid!!', 'profileImage.php') ;
+                    setMessageAndRedirect('File Size Invalid!!', 'bagImage.php') ;
                 }
 
             }else{
-                setMessageAndRedirect('Invalid File Format !!' , 'profileImage.php') ;
+                setMessageAndRedirect('Invalid File Format !!' , 'bagImage.php') ;
             }
             
-            // setMessageAndRedirect('successfully uploaded' , 'profileImage.php') ;
+            // setMessageAndRedirect('successfully uploaded' , 'bagImage.php') ;
         }else{
-            setMessageAndRedirect('uploaded Filed !!' , 'profileImage.php') ;
+            setMessageAndRedirect('uploaded Filed !!' , 'bagImage.php') ;
         }
     }
 }

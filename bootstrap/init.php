@@ -9,6 +9,7 @@ require BASE_PATH . 'libs/contact_me_libs.php' ;
 require BASE_PATH . 'libs/my_reputation_libs.php' ;
 require BASE_PATH . 'libs/prifile_img_libs.php' ;
 require BASE_PATH . 'libs/bag_image_libs.php' ;
+require BASE_PATH . 'libs/certificate_libs.php' ;
 
 #connect to database
 try {
