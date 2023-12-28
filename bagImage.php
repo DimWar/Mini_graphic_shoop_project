@@ -30,8 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $allowedFileSize = 100 * 1024 * 1024 ;
                 if ($fileSize < $allowedFileSize) {
                     if (move_uploaded_file($fileTmpName , $destPath)) {
-                        addAddressBagImageToDb($newFileName) ;
-                        setMessageAndRedirect('Uploaded File Successfully' , 'bagImage.php') ;
+                        addAddressBagImageToDb($newFileName) ? setMessageAndRedirect('Uploaded File Is Successfully' , 'bagImage.php') : setMessageAndRedirect('Uploaded File Is Failde' , 'bagImage.php') ;
                     }else{
                         setMessageAndRedirect('Uploaded To File Filed !!' , 'bagImage.php') ;
                     }

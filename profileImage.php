@@ -30,8 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $allowedFileSize = 5 * 1024 * 1024 ;
                 if ($fileSize < $allowedFileSize) {
                     if (move_uploaded_file($fileTmpName , $destPath)) {
-                        addAddressImageToDb($newFileName) ;
-                        setMessageAndRedirect('Uploaded File Successfully' , 'profileImage.php') ;
+                        addAddressImageToDb($newFileName) ? setMessageAndRedirect('Uploaded File Is Successfully' , 'profileImage.php') : setMessageAndRedirect('Uploaded File Is Failed !!' , 'profileImage.php') ;
                     }else{
                         setMessageAndRedirect('Uploaded To File Filed !!' , 'profileImage.php') ;
                     }

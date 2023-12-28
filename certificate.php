@@ -31,8 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $allowedFileSize = 100 * 1024 * 1024 ;
                 if ($fileSize < $allowedFileSize) {
                     if (move_uploaded_file($fileTmpName , $destPath)) {
-                        addAddressCertificateToDb($newFileName) ;
-                        setMessageAndRedirect('Uploaded File Successfully' , 'certificate.php') ;
+                        addAddressCertificateToDb($newFileName) ? setMessageAndRedirect('Uploaded File Is Successfully' , 'certificate.php') : setMessageAndRedirect('Uploaded File Is Failed' , 'certificate.php') ;
                     }else{
                         setMessageAndRedirect('Uploaded To File Filed !!' , 'certificate.php') ;
                     }
@@ -53,8 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 // delete certificate
 if (isset($_GET['delete_cert']) and is_numeric($_GET['delete_cert'])) {
     $certId = $_GET['delete_cert'] ;
-    dleteCertificate($certId) ;
-    setMessageAndRedirect('Delete Successfully' , 'certificate.php') ;
+    dleteCertificate($certId) ? setMessageAndRedirect('Delete Is Successfully' , 'certificate.php') : setMessageAndRedirect('Delete Is Failde' , 'certificate.php') ;
 }
 
 $certificates = getAllCertAddress() ;

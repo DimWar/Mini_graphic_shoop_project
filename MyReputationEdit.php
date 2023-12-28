@@ -7,8 +7,7 @@ if (isset($_GET['update_reputation']) and is_numeric($_GET['update_reputation'])
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $data = $_POST ;
-    updateReputationById($repId,$data);
-    setMessageAndRedirect('updated successfully','myReputation.php') ;
+    updateReputationById($repId,$data) ? setMessageAndRedirect('Updated Is Successfully','myReputation.php') :     setMessageAndRedirect('Updated Is Failed','myReputation.php') ;
 }
 
 $getRepById = getMyReputationById($repId) ;
